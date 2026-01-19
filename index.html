@@ -2,31 +2,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Kitchen</title>
+    <title>The Kitchen - Welcome to the Fridge!</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div>
-        <h1>Hey I am in the fridge</h1>
-        <img>
+    <div class="main-container">
+        <h1>Hey I am in the fridge!</h1>
+        <img src="https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+             alt="A modern refrigerator with glowing light" 
+             id="fridge-image">
         <div class="textbox">
-            <p>textbox</p>
+            <p><i class="fas fa-ice-cream"></i> Welcome to my digital kitchen! This is where I keep all my cool projects and ideas. Feel free to browse around and see what's cooking!</p>
+            <p style="margin-top: 15px; font-size: 0.9em; color: #666;">
+                <i class="fas fa-lightbulb"></i> Currently brewing: New game development projects and web experiments
+            </p>
         </div>
     </div>
 
-    <div class= "links">
-        <a href="testcode.html"><button>Javascript</button></a>
-        <a href="about.html"><button>about me</button></a>
+    <div class="links">
+        <a href="testcode.html"><button><i class="fas fa-code"></i> Javascript Projects</button></a>
+        <a href="about.html"><button><i class="fas fa-user"></i> About Me</button></a>
     </div>
 
-    <div class="Social Icons">
-        <a href="https://bsky.app/profile/nullysr.bsky.social"><button>bluesky</button></a>
-        <a href="https://www.youtube.com/@NullYSR"><button>youtube</button></a>
-        <a href="https://nullysr.itch.io/"><button>itch</button></a>
-        <button>Email ME</button>
+    <div class="Social-Icons">
+        <a href="https://bsky.app/profile/nullysr.bsky.social" target="_blank"><button><i class="fab fa-bluesky"></i> Bluesky</button></a>
+        <a href="https://www.youtube.com/@NullYSR" target="_blank"><button><i class="fab fa-youtube"></i> YouTube</button></a>
+        <a href="https://nullysr.itch.io/" target="_blank"><button><i class="fas fa-gamepad"></i> Itch.io</button></a>
+        <button id="email-btn"><i class="fas fa-envelope"></i> Email ME</button>
     </div>
 
-
-
+    <script>
+        // Add functionality to the email button
+        document.getElementById('email-btn').addEventListener('click', function() {
+            window.location.href = 'mailto:your-email@example.com?subject=Hello from The Kitchen!';
+        });
+        
+        // Add image hover effect
+        const fridgeImage = document.getElementById('fridge-image');
+        fridgeImage.addEventListener('mouseover', function() {
+            this.style.transform = 'scale(1.02)';
+            this.style.transition = 'transform 0.3s ease';
+        });
+        
+        fridgeImage.addEventListener('mouseout', function() {
+            this.style.transform = 'scale(1)';
+        });
+    </script>
 </body>
 </html>
