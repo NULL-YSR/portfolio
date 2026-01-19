@@ -1,7 +1,186 @@
-body{
-    margin: 0%;
-    background: pink;
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-title{
-    font-family: 'Courier New', Courier, monospace;
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    padding: 20px;
+    color: #333;
+}
+
+/* Main container */
+body > div:first-child {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 0 auto 30px;
+    max-width: 900px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid #e0e6ff;
+}
+
+/* Title styling */
+h1 {
+    color: #2c3e50;
+    font-size: 2.8em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(90deg, #3498db, #2ecc71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Image styling */
+img {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 20px auto;
+    display: block;
+    border: 5px solid #3498db;
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+    background-color: #f8f9fa;
+}
+
+/* Textbox styling */
+.textbox {
+    background: linear-gradient(145deg, #f8f9fa, #e9ecef);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 700px;
+    border: 2px dashed #3498db;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.textbox p {
+    font-size: 1.2em;
+    color: #2c3e50;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+/* Links section */
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px auto;
+    flex-wrap: wrap;
+    max-width: 900px;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+/* Social icons section */
+.Social-Icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px auto;
+    flex-wrap: wrap;
+    max-width: 900px;
+}
+
+/* Button styling - consistent for all buttons */
+button {
+    padding: 15px 30px;
+    font-size: 1.1em;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    min-width: 180px;
+}
+
+.links button {
+    background: linear-gradient(90deg, #3498db, #2980b9);
+    color: white;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+}
+
+.links button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+    background: linear-gradient(90deg, #2980b9, #3498db);
+}
+
+/* Social media buttons */
+.Social-Icons button {
+    background: linear-gradient(90deg, #2ecc71, #27ae60);
+    color: white;
+    box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
+}
+
+.Social-Icons a:first-child button {
+    background: linear-gradient(90deg, #0085ff, #0066cc);
+}
+
+.Social-Icons a:nth-child(2) button {
+    background: linear-gradient(90deg, #ff0000, #cc0000);
+}
+
+.Social-Icons a:nth-child(3) button {
+    background: linear-gradient(90deg, #ff5a5f, #e63946);
+}
+
+.Social-Icons button:last-child {
+    background: linear-gradient(90deg, #9b59b6, #8e44ad);
+}
+
+.Social-Icons button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body > div:first-child {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    img {
+        height: 250px;
+    }
+    
+    .links, .Social-Icons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    button {
+        width: 100%;
+        max-width: 300px;
+        margin: 5px 0;
+    }
+}
+
+/* Animation for the fridge text */
+@keyframes fridgeGlow {
+    0%, 100% { text-shadow: 0 0 5px rgba(52, 152, 219, 0.5); }
+    50% { text-shadow: 0 0 20px rgba(52, 152, 219, 0.8), 0 0 30px rgba(52, 152, 219, 0.4); }
+}
+
+h1 {
+    animation: fridgeGlow 2s ease-in-out infinite;
 }
