@@ -2,51 +2,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Kitchen - Welcome to the Fridge!</title>
+    <title>NullYSR | Developer & Creator</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="main-container">
-        <h1>Hey I am in the fridge!</h1>
-        <img src="https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-             alt="A modern refrigerator with glowing light" 
-             id="fridge-image">
-        <div class="textbox">
-            <p><i class="fas fa-ice-cream"></i> Welcome to my digital kitchen! This is where I keep all my cool projects and ideas. Feel free to browse around and see what's cooking!</p>
-            <p style="margin-top: 15px; font-size: 0.9em; color: #666;">
-                <i class="fas fa-lightbulb"></i> Currently brewing: New game development projects and web experiments
-            </p>
-        </div>
-    </div>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="profile-header">
+                <div class="profile-image-container">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                         alt="Profile Picture" 
+                         class="profile-img">
+                    <div class="status-indicator"></div>
+                </div>
+                <div class="profile-info">
+                    <h1 class="profile-name">NullYSR</h1>
+                    <h2 class="profile-title">Game Developer & Web Creator</h2>
+                    <p class="profile-tagline">Crafting digital experiences from code to gameplay</p>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Digital Space</span>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-    <div class="links">
-        <a href="testcode.html"><button><i class="fas fa-code"></i> Javascript Projects</button></a>
-        <a href="about.html"><button><i class="fas fa-user"></i> About Me</button></a>
-    </div>
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- About Section -->
+            <section class="about-section card">
+                <h3><i class="fas fa-user"></i> About Me</h3>
+                <p>Hello! I'm a passionate developer who loves creating interactive experiences. Whether it's through web development, game design, or experimental coding projects, I enjoy bringing ideas to life in the digital realm.</p>
+                <div class="skills">
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Game Development</span>
+                    <span class="skill-tag">Web Design</span>
+                    <span class="skill-tag">Unity</span>
+                    <span class="skill-tag">Creative Coding</span>
+                </div>
+            </section>
 
-    <div class="Social-Icons">
-        <a href="https://bsky.app/profile/nullysr.bsky.social" target="_blank"><button><i class="fab fa-bluesky"></i> Bluesky</button></a>
-        <a href="https://www.youtube.com/@NullYSR" target="_blank"><button><i class="fab fa-youtube"></i> YouTube</button></a>
-        <a href="https://nullysr.itch.io/" target="_blank"><button><i class="fas fa-gamepad"></i> Itch.io</button></a>
-        <button id="email-btn"><i class="fas fa-envelope"></i> Email ME</button>
+            <!-- Projects/Portfolio Section -->
+            <section class="projects-section card">
+                <h3><i class="fas fa-code"></i> My Projects</h3>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h4>Game Development</h4>
+                        <p>Various indie games and interactive experiences published on itch.io</p>
+                        <a href="https://nullysr.itch.io/" target="_blank" class="project-link">View on Itch.io</a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h4>YouTube Content</h4>
+                        <p>Development tutorials, game showcases, and creative coding sessions</p>
+                        <a href="https://www.youtube.com/@NullYSR" target="_blank" class="project-link">Visit Channel</a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h4>Web Experiments</h4>
+                        <p>Interactive JavaScript projects and creative web experiences</p>
+                        <a href="testcode.html" class="project-link">Explore Projects</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="contact-section card">
+                <h3><i class="fas fa-envelope"></i> Get In Touch</h3>
+                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope-open-text"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Me</h4>
+                            <p>For collaborations and inquiries</p>
+                            <button class="contact-btn" id="email-btn">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Social Links</h4>
+                            <p>Connect with me on these platforms</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer with Social Links -->
+        <footer class="footer">
+            <div class="social-links">
+                <a href="https://bsky.app/profile/nullysr.bsky.social" target="_blank" class="social-link bluesky">
+                    <i class="fab fa-bluesky"></i>
+                    <span>Bluesky</span>
+                </a>
+                <a href="https://www.youtube.com/@NullYSR" target="_blank" class="social-link youtube">
+                    <i class="fab fa-youtube"></i>
+                    <span>YouTube</span>
+                </a>
+                <a href="https://nullysr.itch.io/" target="_blank" class="social-link itch">
+                    <i class="fas fa-gamepad"></i>
+                    <span>Itch.io</span>
+                </a>
+                <a href="about.html" class="social-link about">
+                    <i class="fas fa-info-circle"></i>
+                    <span>About</span>
+                </a>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2024 NullYSR. All digital creations handcrafted with code.</p>
+                <p class="footer-note"><i class="fas fa-coffee"></i> Powered by creativity and late-night coding sessions</p>
+            </div>
+        </footer>
     </div>
 
     <script>
-        // Add functionality to the email button
+        // Email functionality
         document.getElementById('email-btn').addEventListener('click', function() {
-            window.location.href = 'mailto:your-email@example.com?subject=Hello from The Kitchen!';
+            const email = 'hello@nullysr.dev';
+            const subject = 'Hello from your website!';
+            const body = 'Hi NullYSR,\n\nI came across your profile and wanted to connect...';
+            window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        });
+
+        // Add hover effect to profile image
+        const profileImg = document.querySelector('.profile-img');
+        profileImg.addEventListener('mouseover', function() {
+            this.style.transform = 'scale(1.05) rotate(2deg)';
         });
         
-        // Add image hover effect
-        const fridgeImage = document.getElementById('fridge-image');
-        fridgeImage.addEventListener('mouseover', function() {
-            this.style.transform = 'scale(1.02)';
-            this.style.transition = 'transform 0.3s ease';
+        profileImg.addEventListener('mouseout', function() {
+            this.style.transform = 'scale(1) rotate(0deg)';
         });
-        
-        fridgeImage.addEventListener('mouseout', function() {
-            this.style.transform = 'scale(1)';
+
+        // Add animation to project cards on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe project cards
+        document.querySelectorAll('.project-card').forEach(card => {
+            observer.observe(card);
         });
     </script>
 </body>
