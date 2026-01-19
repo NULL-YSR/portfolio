@@ -3,82 +3,239 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NullYSR | Phantom Thief of Code</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Optional: For Icons -->
+    <title>CODING THIEF // PERSONA</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <!-- Profile Header -->
-        <header class="profile-header">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Avatar of NullYSR" class="profile-img">
-            <h1 class="profile-name">NullYSR</h1>
-            <p class="profile-title">Game Developer & Digital Creator</p>
-            <p>Crafting experiences from code to gameplay. Currently in the metaverse.</p>
+    <div class="screen-glitch"></div>
+    
+    <main class="persona-container">
+        <!-- HEADER SECTION -->
+        <header class="thief-header">
+            <div class="logo-mark">✧</div>
+            <h1 class="phantom-title">CODING THIEF</h1>
+            <div class="subtitle">PERSONA ACTIVATED</div>
+            
+            <div class="profile-card">
+                <div class="avatar-frame">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=NullYSR&backgroundColor=000000" 
+                         alt="Your Avatar" 
+                         class="phantom-avatar">
+                    <div class="status-light active"></div>
+                </div>
+                
+                <div class="identity-info">
+                    <h2 class="codename">NULLYSR</h2>
+                    <p class="title">DIGITAL CREATOR</p>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>THE METAVERSE</span>
+                    </div>
+                </div>
+            </div>
         </header>
 
-        <!-- About Section -->
-        <section class="section">
-            <h3><i class="fas fa-user-secret"></i> About This Phantom Thief</h3>
-            <p>I create interactive experiences, from web experiments to indie games. My lair is where code meets creativity.</p>
-            <div class="skills">
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">Game Design</span>
-                <span class="skill-tag">UI/UX</span>
-                <span class="skill-tag">Pixel Art</span>
+        <!-- ABOUT SECTION - Easy to edit -->
+        <section class="confidant-section">
+            <div class="section-header">
+                <h3><span class="section-num">01</span> CONFIDANT PROFILE</h3>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="dialogue-box">
+                <p class="dialogue-text">
+                    <i class="fas fa-quote-left"></i>
+                    <strong>EDIT THIS TEXT IN THE HTML FILE.</strong> 
+                    I'm a developer who creates digital experiences. 
+                    This is my calling card in the network. 
+                    Change this to describe yourself!
+                    <i class="fas fa-quote-right"></i>
+                </p>
+                <div class="dialogue-arrow"></div>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-label">LEVEL</div>
+                    <div class="stat-value">99</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">ARCANA</div>
+                    <div class="stat-value">THE CREATOR</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">STATUS</div>
+                    <div class="stat-value">ACTIVE</div>
+                </div>
             </div>
         </section>
 
-        <!-- Projects / Links -->
-        <section class="section">
-            <h3><i class="fas fa-code"></i> Mission Log (Projects)</h3>
-            <div class="links">
-                <a href="testcode.html" class="action-btn">JavaScript Experiments</a>
-                <a href="about.html" class="action-btn">Dossier (About)</a>
+        <!-- SOCIAL LINKS SECTION -->
+        <section class="network-section">
+            <div class="section-header">
+                <h3><span class="section-num">02</span> NETWORK ACCESS</h3>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="links-grid">
+                <!-- BLUESKY -->
+                <a href="https://bsky.app/profile/nullysr.bsky.social" target="_blank" class="network-card bluesky">
+                    <div class="card-icon">
+                        <i class="fab fa-bluesky"></i>
+                    </div>
+                    <div class="card-content">
+                        <h4>BLUESKY</h4>
+                        <p>Social Network</p>
+                        <div class="access-tag">PUBLIC ACCESS</div>
+                    </div>
+                    <div class="card-arrow">→</div>
+                </a>
+                
+                <!-- YOUTUBE -->
+                <a href="https://www.youtube.com/@NullYSR" target="_blank" class="network-card youtube">
+                    <div class="card-icon">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <div class="card-content">
+                        <h4>YOUTUBE</h4>
+                        <p>Content Channel</p>
+                        <div class="access-tag">VIEW ACCESS</div>
+                    </div>
+                    <div class="card-arrow">→</div>
+                </a>
+                
+                <!-- ITCH.IO -->
+                <a href="https://nullysr.itch.io/" target="_blank" class="network-card itch">
+                    <div class="card-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="card-content">
+                        <h4>ITCH.IO</h4>
+                        <p>Game Portfolio</p>
+                        <div class="access-tag">DOWNLOAD ACCESS</div>
+                    </div>
+                    <div class="card-arrow">→</div>
+                </a>
+                
+                <!-- EMAIL -->
+                <a href="mailto:YOUR_EMAIL_HERE@example.com" class="network-card email">
+                    <div class="card-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="card-content">
+                        <h4>CONTACT</h4>
+                        <p>Send Calling Card</p>
+                        <div class="access-tag">DIRECT MESSAGE</div>
+                    </div>
+                    <div class="card-arrow">→</div>
+                </a>
+                
+                <!-- ADD MORE SOCIAL LINKS HERE -->
+                <!-- 
+                <a href="YOUR_LINK" target="_blank" class="network-card custom">
+                    <div class="card-icon">
+                        <i class="fab fa-icon-name"></i>
+                    </div>
+                    <div class="card-content">
+                        <h4>PLATFORM NAME</h4>
+                        <p>Description</p>
+                        <div class="access-tag">ACCESS LEVEL</div>
+                    </div>
+                    <div class="card-arrow">→</div>
+                </a>
+                -->
             </div>
         </section>
 
-        <!-- Social Links -->
-        <section class="section">
-            <h3><i class="fas fa-broadcast-tower"></i> Establish Contact</h3>
-            <p>Find my calling card across the network.</p>
-            <div class="social-links">
-                <a href="https://bsky.app/profile/nullysr.bsky.social" target="_blank" class="social-btn btn-bluesky">
-                    <i class="fab fa-bluesky"></i> Bluesky
-                </a>
-                <a href="https://www.youtube.com/@NullYSR" target="_blank" class="social-btn btn-youtube">
-                    <i class="fab fa-youtube"></i> YouTube
-                </a>
-                <a href="https://nullysr.itch.io/" target="_blank" class="social-btn btn-itch">
-                    <i class="fas fa-gamepad"></i> Itch.io
-                </a>
-                <button id="emailBtn" class="social-btn">
-                    <i class="fas fa-envelope"></i> Send Calling Card
-                </button>
+        <!-- SKILLS SECTION -->
+        <section class="skills-section">
+            <div class="section-header">
+                <h3><span class="section-num">03</span> COMBAT SKILLS</h3>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="skills-list">
+                <div class="skill-item">
+                    <span class="skill-name">JavaScript</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Game Design</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">UI/UX</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Creative Coding</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 88%"></div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <footer class="site-footer">
-            <p>© 2024 NullYSR. All digital treasures carefully obtained.</p>
-            <p>Steal style, share code.</p>
+        <!-- FOOTER -->
+        <footer class="phantom-footer">
+            <div class="footer-text">
+                <span class="alert">⚠</span> THIS SITE IS A CALLING CARD
+                <span class="alert">⚠</span>
+            </div>
+            <div class="copyright">
+                STEAL THE HEART OF THE SYSTEM • © 2024
+            </div>
+            <div class="navigation">
+                <a href="about.html" class="nav-link">DOSSIER</a> •
+                <a href="projects.html" class="nav-link">MISSIONS</a> •
+                <a href="contact.html" class="nav-link">CONTACT</a>
+            </div>
         </footer>
-    </div>
+    </main>
 
     <script>
-        // Simple email button functionality
-        document.getElementById('emailBtn').addEventListener('click', function() {
-            window.location.href = 'mailto:your.email@example.com?subject=Calling%20Card%20for%20NullYSR';
-        });
-
-        // Optional: Add a simple animation to skill tags on hover
-        document.querySelectorAll('.skill-tag').forEach(tag => {
-            tag.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-3px)';
+        // Simple Persona-style animations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add hover effects to network cards
+            const cards = document.querySelectorAll('.network-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateX(10px)';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateX(0)';
+                });
             });
-            tag.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0)';
+            
+            // Email link customization
+            const emailCard = document.querySelector('.network-card.email');
+            emailCard.addEventListener('click', function(e) {
+                if(this.getAttribute('href').includes('YOUR_EMAIL_HERE')) {
+                    e.preventDefault();
+                    const email = prompt('Enter your email address to setup contact:');
+                    if(email && email.includes('@')) {
+                        this.setAttribute('href', `mailto:${email}?subject=Calling Card Contact`);
+                        this.click();
+                    }
+                }
             });
+            
+            // Glitch effect
+            const glitch = document.querySelector('.screen-glitch');
+            setInterval(() => {
+                if(Math.random() > 0.7) {
+                    glitch.style.opacity = '0.1';
+                    setTimeout(() => glitch.style.opacity = '0', 50);
+                }
+            }, 3000);
         });
     </script>
 </body>
